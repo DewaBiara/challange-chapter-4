@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/stylecars.css" rel="stylesheet">
+
+    <title>BCR - Binar Car Rental</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <section style="background-color:#F1F3FF;">
+        <nav class="container navbar navbar-dark navbar-expand-md justify-content-center bg-faded navbarstyle2" style="background-color:#F1F3FF;">
+            <div class="container-fluid">
+                <div class="logo-BCR">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end offcanvas-style" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <ul class="navbar-nav w-100 justify-content-center color-blue navbarstyle">
+                        <li class="nav-item">
+                            <a class="nav-link nav-menu1" href="#our-services">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-menu2" href="#why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-menu3" href="#testimonial">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-menu4" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-success button-style">Register</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="home" style="background-color:#F1F3FF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-style-sewa">
+                    <h1 class="text-h1-sewa">Sewa & Rental Mobil Terbaik di kawasan Ubud</h1>
+                    <p class="text-p-sewa">Selamat datang di Binar Car Rental. Kami menyediakan mobil 
+                        kualitas terbaik dengan harga terjangkau. Selalu siap melayani 
+                        kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </p>
+                </div>
+                <div class="col-lg-6" style="padding-left: 0px; padding-right: 0px">
+                    <img src="img/img_car.png" class="img-car" alt="img-car">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="card border-0 shadow rounded search-cars">
+        <div class="card-body">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-10 mb-3">
+                <div class="row" style="font-size: 14px;">
+
+                  <div class="col-md-3">
+                    <label for="tipe">Tipe Driver</label>
+                    <select name="tipe" class="form-control" id="driver">
+                      <option value="#">Pilih Tipe Driver</option>
+                      <option value=true>Dengan Driver</option>
+                      <option value=false>Tanpa Driver</option>
+                    </select>
+                    
+                  </div>
+                  <div class="col-md-3">
+                    <label for="tgl">Tanggal</label>
+                    <input type="date" class="form-control" id="date">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="wj">Waktu Jemput / Ambil</label>
+                    <input type="time" class="form-control" id="time">
+                  </div>
+                  <div class="col-md-3">
+                    <label for="penumpang">Jumlah Penumpang</label>
+                    <input type="number" class="form-control" id="passangers">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="span2">
+                  <button class="btn btn-success btn-block mb-2" id="load-btn">Cari Mobil</button>
+                  <button class="btn btn-outline-danger btn-block" id="clear-btn">Reset</button>                      
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="container">
+        <div id="cars-container"></div>
+    </section>
+
+
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+
+    <footer>
+        <div class="container container-style-footer">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <p class="text-p-footer">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                    <p class="text-p-footer2">binarcarrental@gmail.com</p>
+                    <p class="text-p-footer2">081-233-334-808</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <ul class="ul-style">
+                        <li class="list-style-footer">Our services</li>
+                        <li class="list-style-footer">Why Us</li>
+                        <li class="list-style-footer">Testimonial</li>
+                        <li class="list-style-footer">FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <p class="text-p-footer3">Connect with us</p>
+                    <img src="img/icon_facebook.png" class="img-footer" alt="icon-facebook">
+                    <img src="img/icon_instagram.png" class="img-footer" alt="icon-instagram">
+                    <img src="img/icon_twitter.png" class="img-footer" alt="icon-twitter">
+                    <img src="img/icon_mail.png" class="img-footer" alt="icon-mail">
+                    <img src="img/icon_twitch.png" class="img-footer" alt="icon-twitch">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <p class="text-p-footer3">Copyright Binar 2022</p>
+                    <div class="copyright"></div>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+</body>
+</html>

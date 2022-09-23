@@ -1,0 +1,69 @@
+.search-cars{
+    position: absolute;
+    width: 1047px;
+    height: 106px;
+    left: 196px;
+    top: 458px;
+
+    /* Neutral/01 */
+
+    background: #FFFFFF;
+    /* Shadow/High */
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.text-p-searchcar{
+    /* Text S/Light */
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+
+    /* Neutral/04 */
+
+    color: #3C3C3C;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.select-option{
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 12px;
+    gap: 8px;
+
+    width: 210.75px;
+    height: 36px;
+
+    /* Neutral/01 */
+
+    background: #FFFFFF;
+    /* Neutral/02 */
+
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
